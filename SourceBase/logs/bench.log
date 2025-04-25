@@ -1,0 +1,46 @@
+2025-04-24 18:49:10,339 DEBUG cd SourceBase && python3 -m venv env
+2025-04-24 18:49:19,144 DEBUG cd SourceBase && /home/dinhlooc/SourceBase/env/bin/python -m pip install --quiet --upgrade pip
+2025-04-24 18:49:22,627 DEBUG cd SourceBase && /home/dinhlooc/SourceBase/env/bin/python -m pip install --quiet wheel
+2025-04-24 18:49:26,277 LOG Getting frappe
+2025-04-24 18:49:26,277 DEBUG cd SourceBase/apps && git clone https://github.com/frappe/frappe.git --branch version-15 --depth 1 --origin upstream
+2025-04-24 18:49:40,568 LOG Installing frappe
+2025-04-24 18:49:40,569 DEBUG cd /home/dinhlooc/SourceBase && /home/dinhlooc/SourceBase/env/bin/python -m pip install --quiet --upgrade -e /home/dinhlooc/SourceBase/apps/frappe 
+2025-04-24 18:51:08,562 DEBUG cd /home/dinhlooc/SourceBase/apps/frappe && yarn install --check-files
+2025-04-24 18:52:02,073 DEBUG cd SourceBase && bench build
+2025-04-24 18:52:02,672 INFO /home/dinhlooc/frappe-bench-env/bin/bench build
+2025-04-24 18:52:52,142 LOG setting up backups
+2025-04-24 18:52:52,345 LOG backups were set up
+2025-04-24 18:52:52,353 INFO Bench SourceBase initialized
+2025-04-24 18:53:25,511 INFO /home/dinhlooc/frappe-bench-env/bin/bench new-app myapp
+2025-04-24 18:53:25,523 LOG creating new app myapp
+2025-04-24 18:53:57,867 LOG Installing myapp
+2025-04-24 18:53:57,868 DEBUG cd /home/dinhlooc/SourceBase && /home/dinhlooc/SourceBase/env/bin/python -m pip install --quiet --upgrade -e /home/dinhlooc/SourceBase/apps/myapp 
+2025-04-24 18:54:01,737 DEBUG bench build --app myapp
+2025-04-24 18:54:01,926 INFO /home/dinhlooc/frappe-bench-env/bin/bench build --app myapp
+2025-04-24 18:55:29,107 INFO /home/dinhlooc/frappe-bench-env/bin/bench new-site mysite.local
+2025-04-24 18:59:02,787 INFO /home/dinhlooc/frappe-bench-env/bin/bench list-sites
+2025-04-24 19:02:08,080 INFO /home/dinhlooc/frappe-bench-env/bin/bench --site mysite.local install-app myapp
+2025-04-24 19:02:51,668 INFO /home/dinhlooc/frappe-bench-env/bin/bench --site mysite.localhost add-to-hosts
+2025-04-24 19:03:06,793 INFO /home/dinhlooc/frappe-bench-env/bin/bench start
+2025-04-24 19:03:09,109 INFO /home/dinhlooc/frappe-bench-env/bin/bench serve --port 8000
+2025-04-24 19:03:09,128 INFO /home/dinhlooc/frappe-bench-env/bin/bench watch
+2025-04-24 19:03:09,258 INFO /home/dinhlooc/frappe-bench-env/bin/bench worker
+2025-04-24 19:03:09,274 INFO /home/dinhlooc/frappe-bench-env/bin/bench schedule
+2025-04-24 19:07:27,331 INFO /home/dinhlooc/frappe-bench-env/bin/bench --site mysite.local add-to-hosts
+2025-04-24 19:07:42,968 INFO /home/dinhlooc/frappe-bench-env/bin/bench start
+2025-04-24 19:07:47,896 INFO /home/dinhlooc/frappe-bench-env/bin/bench serve --port 8000
+2025-04-24 19:07:47,946 INFO /home/dinhlooc/frappe-bench-env/bin/bench watch
+2025-04-24 19:07:48,044 INFO /home/dinhlooc/frappe-bench-env/bin/bench worker
+2025-04-24 19:07:48,177 INFO /home/dinhlooc/frappe-bench-env/bin/bench schedule
+2025-04-24 19:11:53,717 INFO /home/dinhlooc/frappe-bench-env/bin/bench config dns_multitenant off
+2025-04-24 19:12:06,288 INFO /home/dinhlooc/frappe-bench-env/bin/bench use mysite.local
+2025-04-24 19:12:47,092 INFO /home/dinhlooc/.local/bin/bench start
+2025-04-24 19:12:47,749 WARNING /home/dinhlooc/.local/bin/bench start executed with exit code 1
+2025-04-24 19:12:57,940 INFO /home/dinhlooc/.local/bin/bench start
+2025-04-24 19:12:58,714 WARNING /home/dinhlooc/.local/bin/bench start executed with exit code 1
+2025-04-24 19:13:10,096 INFO /home/dinhlooc/frappe-bench-env/bin/bench start
+2025-04-24 19:13:12,108 INFO /home/dinhlooc/frappe-bench-env/bin/bench serve --port 8000
+2025-04-24 19:13:12,222 INFO /home/dinhlooc/frappe-bench-env/bin/bench watch
+2025-04-24 19:13:12,575 INFO /home/dinhlooc/frappe-bench-env/bin/bench worker
+2025-04-24 19:13:12,592 INFO /home/dinhlooc/frappe-bench-env/bin/bench schedule
+2025-04-25 00:00:10,445 INFO /home/dinhlooc/frappe-bench-env/bin/bench --verbose --site all backup

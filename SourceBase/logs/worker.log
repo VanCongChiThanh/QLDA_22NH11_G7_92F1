@@ -1,0 +1,21 @@
+2025-04-24 19:03:12,469 Worker rq:worker:ca8a43a4994543b2b7ab6e9944b67897 started with PID 31984, version 1.15.1
+2025-04-24 19:03:12,469 Subscribing to channel rq:pubsub:ca8a43a4994543b2b7ab6e9944b67897
+2025-04-24 19:03:12,527 *** Listening on home-dinhlooc-SourceBase:short, home-dinhlooc-SourceBase:default, home-dinhlooc-SourceBase:long...
+2025-04-24 19:03:12,529 Cleaning registries for queue: home-dinhlooc-SourceBase:short
+2025-04-24 19:03:12,561 Cleaning registries for queue: home-dinhlooc-SourceBase:default
+2025-04-24 19:03:12,565 Cleaning registries for queue: home-dinhlooc-SourceBase:long
+2025-04-24 19:07:07,738 Worker ca8a43a4994543b2b7ab6e9944b67897 [PID 31984]: warm shut down requested
+2025-04-24 19:08:08,413 Worker rq:worker:068de353af5a4632aba3aa9df79beea0 started with PID 34082, version 1.15.1
+2025-04-24 19:08:08,424 Subscribing to channel rq:pubsub:068de353af5a4632aba3aa9df79beea0
+2025-04-24 19:08:08,505 *** Listening on home-dinhlooc-SourceBase:short, home-dinhlooc-SourceBase:default, home-dinhlooc-SourceBase:long...
+2025-04-24 19:10:40,524 Worker 068de353af5a4632aba3aa9df79beea0 [PID 34082]: warm shut down requested
+2025-04-24 19:13:20,465 Worker rq:worker:7af319aad4f14dd793341aa0dba653d6 started with PID 35818, version 1.15.1
+2025-04-24 19:13:20,491 Subscribing to channel rq:pubsub:7af319aad4f14dd793341aa0dba653d6
+2025-04-24 19:13:20,604 *** Listening on home-dinhlooc-SourceBase:short, home-dinhlooc-SourceBase:default, home-dinhlooc-SourceBase:long...
+2025-04-24 19:21:55,255 home-dinhlooc-SourceBase:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.user.user.create_contact', kwargs={'user': <User: ngoloc330@gmail.com>, 'ignore_mandatory': True}, method='frappe.core.doctype.user.user.create_contact', site='mysite.local', user='Administrator') (mysite.local::649dcf06-4a82-4efa-8771-8958d3099700)
+2025-04-24 19:22:57,172 home-dinhlooc-SourceBase:default: Job OK (mysite.local::649dcf06-4a82-4efa-8771-8958d3099700)
+2025-04-24 19:22:57,173 Result is kept for 600 seconds
+2025-04-24 19:22:57,618 home-dinhlooc-SourceBase:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.user.user.update_gravatar', kwargs={'name': 'ngoloc330@gmail.com'}, method='frappe.core.doctype.user.user.update_gravatar', site='mysite.local', user='Administrator') (mysite.local::b3c205e7-c80c-460a-bd62-23a394eb76e2)
+2025-04-24 19:23:01,110 home-dinhlooc-SourceBase:default: Job OK (mysite.local::b3c205e7-c80c-460a-bd62-23a394eb76e2)
+2025-04-24 19:23:01,111 Result is kept for 600 seconds
+2025-04-24 19:30:11,645 Worker 7af319aad4f14dd793341aa0dba653d6 [PID 35818]: warm shut down requested
